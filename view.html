@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helmet Product Page</title>
+    <link rel="stylesheet" href="view.css">
+</head>
+
+<body>
+    <!-- Product Container -->
+    <div class="product-container">
+        <!-- Header -->
+        <div class="header">
+            <button class="back-btn">&larr;</button>
+            <h2>Product Preview</h2>
+        </div>
+
+        <!-- Product Image -->
+        <div class="image-container">
+            <img src="https://via.placeholder.com/150x100 " alt="mobile" class="product-image">
+        </div>
+
+        <!-- Product Details -->
+        <div class="product-details">
+            <h1 class="product-title">
+                <strong>PRODUCT NAME</strong> Trooper D1 Flip-up Full Face with Dual Visor </h1>
+            <div class="ratings">
+                <span class="stars">⭐ ⭐ ⭐ ⭐ ☆</span>
+                <span class="rating-score">4.3</span>
+                <span class="total-ratings">· 2000 ratings</span>
+            </div>
+            <div class="price-section">
+                <span class="discount">22% OFF</span>
+                <span class="original-price">₹2,190</span>
+                <span class="final-price">₹1,708</span>
+            </div>
+            <p class="delivery-info">
+                Free delivery by <strong>Within 2 Days</strong>
+            </p>
+            <p class="offer-info">
+                <em>Apply Bank credit card to get a 20% discount</em>
+            </p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="action-buttons">
+            <button class="add-to-cart" id="Add to Cart">Cart</button>
+            <script>
+                document.getElementById('Add to Cart').addEventListener('click', function() {
+                    alert('Item added to cart!');
+                });
+            </script>
+            <button class="buy-now">Buy now</button>
+        </div>
+    </div>
+</body>
+
+</html>

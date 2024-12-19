@@ -1,0 +1,129 @@
+/* General Styles */
+
+body {
+    margin: 0;
+    font-family: indie flower, cursive;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px;
+    margin: 0 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar select,
+.search-bar button {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #9aa6b2;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cart img {
+    width: 30px;
+}
+
+
+/* Find Part Section */
+
+.find-part {
+    text-align: center;
+    padding: 20px;
+}
+
+.find-part h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.form-container select,
+.form-container input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Free Shipping Section */
+
+.free-shipping {
+    margin: 20px;
+    border: 3px solid #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.shipping-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.shipping-logo img {
+    height: 80px;
+}
+
+.shipping-details img {
+    height: 60px;
+}
+
+.shipping-details span {
+    font-size: 1.2em;
+    margin: 5px;
+}
+
+.shipping-details .amount {
+    font-size: 1.8em;
+    color: red;
+    font-weight: bold;
+}
+
+.hovering-

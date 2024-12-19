@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spare Parts Store</title>
+    <link rel="stylesheet" href="projectvits.css">
+
+</head>
+
+<body>
+    <link rel="stylesheet" href="file:///C:/VITS_PROJECT_X/menu.html">
+    <header>
+        <h1>Spare Parts Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#computers">Computer Parts</a></li>
+                <li><a href="#mobiles">Mobile Parts</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="computers">
+            <h2>Computer Parts</h2>
+            <div class="product-grid">
+                <div class="product"><br><br>
+                    <img src="https://rukminim2.flixcart.com/image/720/864/jx502vk0/ram/9/p/7/crucial-ct16g4sfd824a-original-imafhnsg8gevbxa2.jpeg?q=60&crop=false" alt="RAM" height="300" width="200">
+                    <br><br><br>
+                    <h3>16GB RAM</h3>
+                    <p>6,350.00 ₹</p>
+                    <button>view product</button>
+                </div>
+                <div class="product"><br><br>
+                    <img src="https://rukminim2.flixcart.com/image/850/1000/l44hyfk0/internal-hard-drive/l/w/g/256-gb-ssd-for-desktop-laptop-consistent-original-imagf3nsnzrdktfu.jpeg?q=90&crop=false" alt="SSD" height="300" width="200">
+                    <h3>512GB SSD</h3>
+                    <p>8,467.00 ₹</p>
+                    <button>view product</button>
+                </div>
+                <div class="product">
+                    <img src="https://elitehubs.com/cdn/shop/files/1000_8__result_4305fe62-669e-4922-b2fa-f67c9f179765.webp?v=1721733741" alt="GPU ">
+                    <h3>GTX 1660</h3>
+                    <p>21,167.00 ₹</p>
+                    <button>view product</button>
+                </div>
+
+            </div>
+            <div class="product-grid">
+                <div class="product"><br><br>
+                    <img src="https://rukminim2.flixcart.com/image/720/864/jx502vk0/ram/9/p/7/crucial-ct16g4sfd824a-original-imafhnsg8gevbxa2.jpeg?q=60&crop=false" alt="RAM" height="300" width="200">
+                    <br><br><br>
+                    <h3>16GB RAM</h3>
+                    <p>6,350.00 ₹</p>
+                    <button>view product</button>
+                    <div class="product">
+                        <img src="https://rukminim2.flixcart.com/image/850/1000/l44hyfk0/internal-hard-drive/l/w/g/256-gb-ssd-for-desktop-laptop-consistent-original-imagf3nsnzrdktfu.jpeg?q=90&crop=false" alt="SSD">
+                        <h3>512GB SSD</h3>
+                        <p>8,467.00 ₹</p>
+                        <button>view product</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://elitehubs.com/cdn/shop/files/1000_8__result_4305fe62-669e-4922-b2fa-f67c9f179765.webp?v=1721733741" alt="GPU ">
+                        <h3>GTX 1660</h3>
+                        <p>21,167.00 ₹</p>
+                        <button>view product</button>
+                    </div>
+        </section>
+
+        <section id="mobiles ">
+            <h2>Mobile Parts</h2>
+            <div class="product-grid ">
+                <div class="product ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrMiRjO_FEmPZgfyKquimtQ0VRZzP22YQlRg&s" alt="Battery ">
+                    <h3>Mobile Battery</h3>
+                    <p>999.00 ₹</p>
+                    <button>view product</button>
+                </div>
+                <div class="product ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2RDHpTRjsg4RXfykUtyhzvH1_8k_PwXTSZA&s" alt="Screen ">
+                    <h3>Mobile Screen</h3>
+                    <p>1,199.00 ₹</p>
+                    <button>view product</button>
+                </div>
+                <div class="product ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjh5t6dU1U8wvWVz_wj0MfIorwLehEqnCSCg&s" alt="Camera ">
+                    <h3>Camera Module</h3>
+                    <p>2199.00 ₹</p>
+                    <button>view product</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Spare Parts Store. All rights reserved.</p>
+    </footer>
+</body>
+<style>
+    /* Sidebar styling */
+    
+    .sidebar {
+        height: 100%;
+        width: 0;
+        /* Initially hidden */
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        overflow-x: hidden;
+        transition: 0.3s;
+        /* Smooth toggle effect */
+        padding-top: 20px;
+    }
+    
+    .sidebar.active {
+        width: 250px;
+        /* Show sidebar */
+    }
+    
+    .sidebar button {
+        display: block;
+        background-color: #ffffff;
+        color: rgb(7, 6, 6);
+        padding: 15px 20px;
+        text-align: left;
+        border: none;
+        width: 100%;
+        font-size: 18px;
+        cursor: pointer;
+        font-family: indie flower, cursive;
+    }
+    
+    .sidebar button:hover {
+        background-color: #d9eafd;
+    }
+    /* Content area */
+    
+    .content {
+        transition: margin-left 0.3s;
+        margin-left: 0;
+        padding: 20px;
+    }
+    
+    .content.shift {
+        margin-left: 250px;
+        /* Shift when sidebar is visible */
+    }
+    /* Toggle button */
+    
+    .toggle-btn {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: #9aa6b2;
+        color: rgb(255, 255, 255);
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-family: indie flower, cursive;
+    }
+</style>
+</head>
+
+<body>
+
+    <!-- Toggle button -->
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="mySidebar">
+        <h1>Hi!</h1>
+        <button><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Home" height="18" width="18">  Home</button>
+        <button><img src="https://www.shutterstock.com/image-vector/category-icon-flat-illustration-vector-600nw-2431883211.jpg" alt="Categories" height="18" width="18" />  View All Categories</button>
+        <button><img src="https://cdn-icons-png.flaticon.com/512/685/685887.png" alt="Messages" height="18" width="18"/>Messages</button>
+        <button><img src="https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Search-icon.png" alt="Search" height="18" width="18" />  Search</button>
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxtTJSL2iaY31-9bGoInow41mgykbC0xHgTI5IZvfIww&s" alt="Orders" height="18" width="18" />  My Orders</button>
+        <button><img src="https://static.thenounproject.com/png/2526085-200.png" alt="Ship" height="18" width="18" />  Ship with luca</button>
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGDGYEjX0yBuPbOr58X2JasiNRkTMZStExI1-6mFIzgRosrsslFuUM7amc&s=10://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREClZSRTg1_hzaquPGHL3mx5pesHzZSWL6fMYgaMlIhw&s" alt="Sell"
+        height="18" width="18" />  Sell On app</button>
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKPLbXXU8iSenMpV5lXYn9a8-G56DFjfHUeuUxaohsbA&s" alt="About" height="18" width="18" />  About us</button>
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjDZ-cLhpIuSUvrHUsrwUjembF_-l2C18xg9zmDrV1lJeDz63e8meuKeg&s=10" alt="Support" height="18" width="18" />  Help & Support</button>
+        <br><br>
+        <div class="sidebar-footer">
+            &copy; 2024 app
+        </div>
+
+        <!-- Content -->
+        <div class="content" id="mainContent">
+            <h1>Toggle Sidebar Example</h1>
+            <p>Click the button to toggle the sidebar.</p>
+        </div>
+
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById('mySidebar');
+                const content = document.getElementById('mainContent');
+                sidebar.classList.toggle('active');
+                content.classList.toggle('shift');
+            }
+        </script>
+
+</body>
+
+</html>

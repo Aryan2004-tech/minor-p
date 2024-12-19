@@ -1,0 +1,63 @@
+/* General Styles */
+
+body {
+    font-family: indie flower, cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.sale-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.sale-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #9aabe6;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.sale-item:hover {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+
+.sale-item img {
+    width: 100%;
+    height: auto;
+}
+
+.details {
+    padding: 10px;
+}
+
+.offer {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #000;
+}
+
+.desc {
+    font-size: 0.9em;
+    color: #555;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Sidebar</title>
+    <style>
+        /* Sidebar styling */
+        
+        .sidebar {
+            height: 100%;
+            width: 0;
+            /* Initially hidden */
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #ffffff;
+            overflow-x: hidden;
+            transition: 0.3s;
+            /* Smooth toggle effect */
+            padding-top: 20px;
+        }
+        
+        .sidebar.active {
+            width: 250px;
+            /* Show sidebar */
+        }
+        
+        .sidebar button {
+            display: block;
+            background-color: #ffffff;
+            color: rgb(7, 6, 6);
+            padding: 15px 20px;
+            text-align: left;
+            border: none;
+            width: 100%;
+            font-size: 18px;
+            cursor: pointer;
+            font-family: indie flower, cursive;
+        }
+        
+        .sidebar button:hover {
+            background-color: #d9eafd;
+        }
+        /* Content area */
+        
+        .content {
+            transition: margin-left 0.3s;
+            margin-left: 0;
+            padding: 20px;
+        }
+        
+        .content.shift {
+            margin-left: 250px;
+            /* Shift when sidebar is visible */
+        }
+        /* Toggle button */
+        
+        .toggle-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #9aa6b2;
+            color: rgb(255, 255, 255);
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-family: indie flower, cursive;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Toggle button -->
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="mySidebar">
+        <button onclick="toggleSidebar()">></button>
+        <h1>Hi!</h1>
+        <button><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Home" height="18" width="18">  Home</button>
+        <button><img src="https://www.shutterstock.com/image-vector/category-icon-flat-illustration-vector-600nw-2431883211.jpg" alt="Categories" height="18" width="18" />  View All Categories</button>
+        <button><img src="https://cdn-icons-png.flaticon.com/512/685/685887.png" alt="Messages" height="18" width="18"/>Messages</button>
+        <button><img src="https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Search-icon.png" alt="Search" height="18" width="18" />  Search</button>
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxtTJSL2iaY31-9bGoInow41mgykbC0xHgTI5IZvfIww&s" alt="Orders" height="18" width="18" />  My Orders</button>
+        <button><img src="https://static.thenounproject.com/png/2526085-200.png" alt="Ship" height="18" width="18" />  Ship with luca</button>
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGDGYEjX0yBuPbOr58X2JasiNRkTMZStExI1-6mFIzgRosrsslFuUM7amc&s=10://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREClZSRTg1_hzaquPGHL3mx5pesHzZSWL6fMYgaMlIhw&s" alt="Sell"
+            height="18" width="18" />  Sell On app</button>
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKPLbXXU8iSenMpV5lXYn9a8-G56DFjfHUeuUxaohsbA&s" alt="About" height="18" width="18" />  About us</button>
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjDZ-cLhpIuSUvrHUsrwUjembF_-l2C18xg9zmDrV1lJeDz63e8meuKeg&s=10" alt="Support" height="18" width="18" />  Help & Support</button>
+        <br><br>
+        <div class="sidebar-footer">
+            &copy; 2024 app
+        </div>
+        <!-- Content -->
+        <div class="content" id="mainContent">
+            <h1>Sidebar with Blur Effect</h1>
+            <p>Click the toggle button to open or close the sidebar. The background will blur when the sidebar is visible.</p>
+        </div>
+
+
+
+        <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById('mySidebar');
+                const content = document.getElementById('mainContent');
+                const toggleBtn = document.querySelector('.toggle-btn');
+
+                sidebar.classList.toggle('active'); // Toggle sidebar visibility
+                content.classList.toggle('blur'); // Toggle blur effect
+            }
+        </script>
+
+</body>
+
+</html>

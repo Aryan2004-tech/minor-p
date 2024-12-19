@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINOR PROJECT</title>
+    <style>
+        /* Sidebar styling */
+        
+        .sidebar {
+            height: 100%;
+            width: 0;
+            /* Initially hidden */
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #ffffff;
+            overflow-x: hidden;
+            transition: 0.3s;
+            /* Smooth toggle effect */
+            padding-top: 20px;
+        }
+        
+        .sidebar.active {
+            width: 250px;
+            /* Show sidebar */
+        }
+        
+        .sidebar button {
+            display: block;
+            background-color: #ffffff;
+            color: rgb(7, 6, 6);
+            padding: 15px 20px;
+            text-align: left;
+            border: none;
+            width: 100%;
+            font-size: 18px;
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .sidebar button:hover {
+            background-color: #d9eafd;
+        }
+        /* Content area */
+        
+        .content {
+            transition: margin-left 0.3s;
+            margin-left: 0;
+            padding: 20px;
+        }
+        
+        .content.shift {
+            margin-left: 250px;
+            /* Shift when sidebar is visible */
+        }
+        /* Toggle button */
+        
+        .toggle-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #9aa6b2;
+            color: rgb(255, 255, 255);
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Toggle button -->
+    <button class="toggle-btn" onclick="toggleSidebar()"><h3>☰ Menu</h3></button>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="mySidebar">
+        <button onclick="toggleSidebar()">></button>
+        <h1>Hi!</h1>
+        <button><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Home" height="18" width="18">  Home</button>
+        <button><img src="https://www.shutterstock.com/image-vector/category-icon-flat-illustration-vector-600nw-2431883211.jpg" alt="Categories" height="18" width="18" />  View All Categories</button>
+        <button><img src="https://cdn-icons-png.flaticon.com/512/685/685887.png" alt="Messages" height="18" width="18"/>Messages</button>
+        <button><img src="https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Search-icon.png" alt="Search" height="18" width="18" />  Search</button>
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxtTJSL2iaY31-9bGoInow41mgykbC0xHgTI5IZvfIww&s" alt="Orders" height="18" width="18" />  My Orders</button>
+        <button><img src="https://static.thenounproject.com/png/2526085-200.png" alt="Ship" height="18" width="18" />  Ship with ShopEase</button>
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGDGYEjX0yBuPbOr58X2JasiNRkTMZStExI1-6mFIzgRosrsslFuUM7amc&s=10://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREClZSRTg1_hzaquPGHL3mx5pesHzZSWL6fMYgaMlIhw&s" alt="Sell"
+            height="18" width="18" />  Sell On app</button>
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKPLbXXU8iSenMpV5lXYn9a8-G56DFjfHUeuUxaohsbA&s" alt="About" height="18" width="18" />  About us</button>
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjDZ-cLhpIuSUvrHUsrwUjembF_-l2C18xg9zmDrV1lJeDz63e8meuKeg&s=10" alt="Support" height="18" width="18" />  Help & Support</button>
+        <br><br>
+        <div class="sidebar-footer">
+            &copy; 2024 app
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content" id="mainContent">
+
+
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Spare Parts Store</title>
+            <link rel="stylesheet" href="projectvits.css">
+
+        </head>
+
+        <body>
+            <link rel="stylesheet" href="file:///C:/VITS_PROJECT_X/projectvits.html">
+            <header>&nbsp;
+                <h1>Welcome to ShopEase</h1><br><br>
+                <p>Your one-stop shop for all your needs.</p><br>
+            </header>
+
+
+
+
+
+
+            <head>
+                <meta charset="UTF-8 ">
+                <meta name="viewport " content="width=device-width, initial-scale=1.0 ">
+                <title>Parts Search and Free Shipping</title>
+                <link rel="stylesheet " href="searchbar.css ">
+            </head>
+
+            <body>
+
+
+
+
+
+
+                <!-- Find Part Section -->
+                <section class="find-part ">
+                    <h2>FIND PART BY PRIORITY</h2>
+                    <div class="form-container ">
+                        <select>
+                        /* Commented out the options for now */
+                        
+                        
+                            <option value="Type of product ">Type of product</option>
+                            <option value="computer ">Computer</option>
+                            <option value="mobile ">Mobile</option>
+                            <option value="laptop ">Laptop</option>
+                            <option value="speaker ">Speaker</option>
+                            <option value="speaker system ">Speaker system</option>
+                            <option value="headphones ">Headphones</option>
+                            <option value="mouse ">Mouse</option>
+                            <option value="keyboard ">Keyboard</option>
+                            <option value="monitor ">Monitor</option>
+                            <option value="storage ">Storage</option>
+                            <option value="other ">Other</option>
+
+                        </select>
+                        <select>
+                        /* comment out the product make */
+                        
+                        
+                        <option>Product Make</option>
+                        <option>Apple</option>
+                        <option>HP</option>
+                        <option>Dell</option>
+                        <option>ASUS</option>
+                        <option>Lenovo</option>
+                        <option>Acer</option>
+                        <option>samsung</option>
+                        <option>Xiaomi</option>
+                        <option>Google</option>
+                        <option>OnePlus</option>
+                        <option>Huawei</option>
+                        <option>Oppo</option>
+                        <option>Vivo</option>
+                        <option>Realme</option>
+                        <option>OnePlus</option>
+                      </select><br>
+                        <select>
+                        /* comment out for model */
+                        
+                        
+                        <option value="Apple ">Model</option>
+                        <option value="iPhone 12 ">iPhone 12</option>
+                        <option value="iPhone 12 Pro ">iPhone 12 Pro</option>
+                        <option value="iPhone 12 Pro Max ">iPhone 12 Pro Max</option>
+                        <option value="iPhone 13 ">iPhone 13</option>
+                        <option value="iPhone 13 Pro Max ">iPhone 13 Pro Max</option>
+                        <option value="iPhone 13 Pro ">iPhone 13 Pro</option>
+                        <option value="iPhone 14 ">iPhone 14</option>
+                        <option value="iPhone 14 Pro ">iPhone 14 Pro</option>
+                        <option value="iPhone 14 Pro Max ">iPhone 14 Pro Max</option>
+                        <option value="iPhone 15 ">iPhone 15</option>
+                        <option value="iPhone 15 Pro ">iPhone 15 Pro</option>
+                        <option value="iPhone 15 Pro Max ">iPhone 15 Pro Max</option>
+                        <option value="iPad Pro ">iPad Pro</option>
+                        <option value="iPad Air ">iPad Air</option>
+                        <option value="iPad Mini ">iPad Mini</option>
+                        <option value="iPad ">iPad</option>
+                        <option value="MacBook Air ">MacBook Air</option>
+                        <option value="MacBook Pro ">MacBook Pro</option>
+                        <option value="MacBook ">MacBook</option>
+                        <option value="MacBook Pro Max ">MacBook Pro Max</option>
+                        <option value="iMac ">iMac</option>
+                        <option value="iWatch ">iWatch</option>
+                        <option value="Apple TV ">Apple TV</option>
+                        <option value="iPod ">iPod</option>
+                        <option value="iPad mini 5 ">iPad mini 5</option>
+                        <option value="Apple Watch Series 6 ">Apple Watch Series 6</option>
+                        <option value="Apple Watch Series 7 ">Apple Watch Series 7</option>
+                        <option value="HP ">HP 15s</option>
+                        <option value="HP Spectre ">HP Spectre</option>
+                        <option value="HP Zenbook ">HP Zenbook</option>
+                        <option value="Acer Aspire ">Acer Aspire</option>
+                        <option value="ASUS VivoBook ">ASUS VivoBook</option>
+                        <option value="Acer Nitro 5 ">Acer Nitro 5</option>
+                        <option value="ASUS VivoBook X515 ">ASUS VivoBook X515</option>
+                        <option value="ASUS VivoBook X515F ">ASUS VivoBook X515F</option>
+                        <option value="ASUS VivoBook X515U ">ASUS VivoBook X515U</option>
+                        <option value="ASUS VivoBook X515V ">ASUS VivoBook X515V</option>
+                        <option value="ASUS VivoBook X515W ">ASUS VivoBook X515W</option>
+                        <option value="ASUS VivoBook X515Y ">ASUS VivoBook X515Y</option>
+                        <option value="ASUS VivoBook X515Z ">ASUS VivoBook X515Z</option>
+                        <option value="ASUS VivoBook X515ZA ">ASUS VivoBook X515ZA</option>
+                        <option value="samsung "> samsung s23</option>
+                        <option value="samsung Galaxy S23 ">samsung Galaxy S23</option>
+                        <option value="samsung Galaxy S23 Ultra ">samsung Galaxy S23 Ultra</option>
+                        <option value="samsung Galaxy S23+ ">samsung Galaxy S23+</option>
+                        <option value="samsung Galaxy S23+ Ultra ">samsung Galaxy S23+ Ultra</option>
+                        <option value="samsung Galaxy S23+ 5G ">samsung Galaxy S23+ 5G</option>
+                        <option value="samsung Galaxy S23+ 5G Ultra ">samsung Galaxy S23+ 5G Ultra</option>
+                        <option value="samsung Galaxy S24 ">samsung Galaxy S24</option>
+                        <option value="samsung Galaxy S24+ ">samsung Galaxy S24+</option>
+                        <option value="samsung Galaxy S24+ 5G ">samsung Galaxy S24+ 5G</option>
+                        <option value="samsung Galaxy S24 Ultra ">samsung Galaxy S24 Ultra</option>
+                        <option value="samsung Galaxy S24 Ultra 5G ">samsung Galaxy S24
+                            Ultra 5G</option>
+                        <option value="samsung Galaxy S25 ">samsung Galaxy S25</option>
+                        <option value="Vivo ">T2X 5G</option>
+                        <option value="Vivo ">Vivo Y55</option>
+                        <option value="Vivo ">Vivo Y55i</option>
+                        <option value="oppo ">C51</option>
+                        <option value="oppo ">Reno 5 Pro</option>
+
+                      </select>
+                        <select>
+                        /* Commented out model year */
+                        
+                        
+                        <option>Model Year</option>
+                        <option value="2024 ">2024</option>
+                        <option value="2023 ">2023</option>
+                        <option value="2022 ">2022</option>
+                        <option value="2021 ">2021</option>
+                        <option value="2020 ">2020</option>
+                        <option value="2019 ">2019</option>
+                        <option value="2018 ">2018</option>
+                        <option value="2017 ">2017</option>
+                        <option value="2016 ">2016</option>
+                      </select>
+                        <select>
+                        /* Commented out category */
+                        
+                        
+                        <option>Category (Optional)</option>
+                        <option value="company manufactured ">Company manufactured</option>
+                        <option value="brand manufactured ">Brand manufactured</option>
+                        <option value="third-party manufactured ">Third-party manufactured</option>
+                        <option value="custom made ">Custom made</option>
+                        <option value="limited edition ">Limited edition</option>
+                        <option value="pre-owned ">Pre-owned</option>
+                        <option value="buy 1 get 1 free ">Buy 1 get 1 free</option>
+                        <option value="free shipping ">Free shipping</option>
+                        <option value="free return ">Free return</option>    
+                        <option value="buy 1 get 1 free with gift ">Buy 1 get 1 free with gift</option>
+                        <option value="free gift ">Free gift</option>
+
+                        
+                      </select>
+                        <input type="text " placeholder="Name of Product (optional) ">
+                        <button class="search-btn " id="go">Go</button>
+                        <script>
+                            document.getElementById('go').addEventListener('click'),
+                                function() {
+                                    alert("Match Not Found");
+
+                                }
+                        </script>
+                    </div>
+                </section>
+
+
+            </body>
+
+</html>
+
+<body>
+    <h1>SPECIAL FOR YOU</h1>
+    <div class="sale-container ">
+        <!-- Item 1 -->
+        <div class="sale-item ">
+            <img src="https://en.ids-imaging.com/assets/images/n/ids-usb-3-1-ueye-le-af-machine-vision-cameras-autofocus-800x400-rvp0z8kp9r2ftcx.jpg" alt="Nasher Miles ">
+            <div class="details ">
+                <p class="offer ">Up to 25% Off</p>
+                <p class="desc ">On Camera Modules</p>
+
+            </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="sale-item ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3SzLvRvjkr6GfHJ67noxWubz6-ADldelax6960kLx4Gw77Xc1IxgVffeXexr59XlNJDY&usqp=CAU" alt="Safari "><br>
+            <div class="details "><br>
+                <p class="offer ">Min 35% Off</p>
+                <p class="desc ">On Display</p>
+            </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="sale-item ">
+            <img src="https://m.media-amazon.com/images/I/51YqJwoYjTL.jpg" alt="Peter England "><br>
+            <div class="details "><br>
+                <p class="offer ">Min. 50% Off</p>
+                <p class="desc ">On Storage devices</p>
+            </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="sale-item "><br>
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/laptop-battery/c/7/v/laptop-battery-mu06-for-hp-430-630-g4-g6-g62-dm4-dv6-compaq-cq42-original-imahyaq9q5furbyn.jpeg?q=20&crop=false" alt="Boat ">
+            <div class="details ">
+                <p class="offer ">From ₹999</p>
+                <p class="desc ">Best of Power</p>
+            </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="sale-item ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGFyqGt60KXbMVySgRHNto-Cy4qhP-a3wXufOHTd0sPDAUgzr6MtPQApXO&s=10" alt="Boult "><br>
+            <div class="details "><br><br>
+                <p class="offer ">Starting at ₹1,199</p>
+                <p class="desc ">Deals of the month</p>
+            </div>
+        </div>
+        <!-- Item 6 -->
+
+        <div class="sale-item "><br>
+            <img src="https://cdn.britannica.com/64/170564-050-7A0A86A2/motherboard-for-computer.jpg" alt="Mivi ">
+            <div class="details "><br><br>
+                <p class="offer ">Just ₹2,499</p>
+                <p class="desc ">Flash sale on Motherboard</p>
+            </div>
+        </div>
+        <div class="sale-item ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqiDMG7ZZlWtY0EKx6q0bamlknORmMcpUE0fH8R19Iu8VrTktqKnHx2B64&s=10" alt="Boult ">
+            <div class="details ">
+                <p class="offer ">From ₹1,499</p>
+                <p class="desc ">On Graphics card</p>
+            </div>
+        </div>
+        <div class="sale-item ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9YwVV00HbAREBHh6aLGUhk2gMtnaUoLBvxDcDVlyZRWZ-4l0pPWTs1FvI&s=10" alt="Boult ">
+            <div class="details ">
+                <p class="offer ">Flat 20% Off</p>
+                <p class="desc ">Just For you</p>
+            </div>
+        </div>
+        <div class="sale-item ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbzMX8xcYyAUFUN5buLUgfVdMG6yz9XVZM2Q&usqp=CAU" alt="Boult ">
+            <div class="details ">
+                <p class="offer ">Just ₹299</p>
+                <p class="desc ">Micro controllers</p>
+            </div>
+        </div>
+        <div class="sale-item ">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/kgqvlow0/data-cable/hdmi-cable/g/e/t/terabyte-10m-hdmi-cable-supports-hdmi-devices-4k-full-hd-1080p-original-imafwxysupcd87np.jpeg?q=90&crop=false" alt="Boult ">
+            <div class="details ">
+                <p class="offer ">Min 20% Off</p>
+                <p class="desc ">On Data Cables & Ports</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('mySidebar');
+        const content = document.getElementById('mainContent');
+        sidebar.classList.toggle('active');
+        content.classList.toggle('shift');
+    }
+</script>
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="UTF-8 ">
+    <meta name="viewport " content="width=device-width, initial-scale=1.0 ">
+    <title>Just For You</title>
+    <link rel="stylesheet " href="end.css ">
+</head>
+
+
+
+<head>
+    <meta charset="UTF-8 ">
+    <meta name="viewport " content="width=device-width, initial-scale=1.0 ">
+    <title>Product Categories</title>
+    <link rel="stylesheet " href="bycategory.css ">
+</head>
+
+<body>
+    <!-- Featured Products Section -->
+    <section class="featured-products ">
+        <h2>FEATURED PRODUCTS</h2>
+        <div class="product-container ">
+            <!-- Product 1 -->
+            <div class="product-card ">
+                <img src="https://m.media-amazon.com/images/I/71wG-FknGuL._AC_UF480,480_SR480,480_.jpg" alt="Brake Pads ">
+                <p>Wefly HT03XL Laptop Battery Compatible for HP Spare L11119</p>
+                <div class="price ">Rs.1,895.00</div><br>
+                <button id="Buy Now">View Product</button>
+                <script>
+                    document.getElementById('Buy Now').addEventListener('click', function() {
+                        window.location.href = "file:///C:/VITS_PROJECT_X/view.html"
+                    });
+                </script>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card ">
+                <img src="https://m.media-amazon.com/images/I/41Bn2mLk6yL._AC_.jpg" alt="Ignition Coil ">
+                <br><br><br>
+                <p>RIATECH 4 Ports USB 2.0 Header Port Slot Plate Adapter Panel Cable</p>
+                <div class="price ">Rs4,532.00</div><br>
+                <button id="p5">View Product</button>
+                <script>
+                    document.getElementById('p5').addEventListener('click', function() {
+                        window.location.href = "file:///C:/VITS_PROJECT_X/view.html"
+                    });
+                </script>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card "><br>
+                <img src="https://rukminim2.flixcart.com/image/416/416/ku79vgw0/internal-hard-drive/x/0/8/s6-256gb-consistent-original-imag7dpypusxmhdq.jpeg?q=70&crop=false" alt="GPS Tracker "><br><br>
+                <p>Consistent SSD 256 GB All in One Internal Solid State Drive (SSD)</p>
+                <div class="price ">Rs1,167.00</div><br>
+                <button id="p4">View Product</button>
+                <script>
+                    document.getElementById('p4').addEventListener('click', function() {
+                        window.location.href = "file:///C:/VITS_PROJECT_X/view.html"
+                    });
+                </script>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card "><br><br>
+                <img src="https://rukminim2.flixcart.com/image/832/832/kr83ukw0/motherboard/q/3/m/b450m-ds3h-v2-gigabyte-original-imag52myf5fyzbtd.jpeg?q=70&crop=false 2x, https://rukminim2.flixcart.com/image/416/416/kr83ukw0/motherboard/q/3/m/b450m-ds3h-v2-gigabyte-original-imag52myf5fyzbtd.jpeg?q=70&crop=false 1x"
+                    alt="Brake Pads "><br><br><br>
+                <p>GIGABYTE B450M DS3H V2 Motherboard</p>
+                <div class="price ">Rs6,125.00</div><br>
+                <button id="p3">View Product</button>
+                <script>
+                    document.getElementById('p3').addEventListener('click', function() {
+                        window.location.href = "file:///C:/VITS_PROJECT_X/view.html"
+                    });
+                </script>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card "><br>
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/motherboard/t/c/u/h61-1155-ddr3-h61-1155-ddr3-frontech-original-imahf4g9fnjeswdn.jpeg?q=70&crop=false" alt="Brake Pads "><br>
+                <p>Frontech H61/1155 DDR3 Motherboard (FT-0470, Black, Red)</p>
+                <div class="price ">Rs1,329.00</div><br>
+                <button id="p2">View Product</button>
+                <script>
+                    document.getElementById('p2').addEventListener('click', function() {
+                        window.location.href = "file:///C:/VITS_PROJECT_X/view.html"
+                    });
+                </script>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card "><br><br><br>
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/ram/e/3/d/xpg-gammix-d30-8gb-3200mhz-xmp-2-ready-adata-original-imahf6p5pxg7hvhy.jpeg?q=70&crop=false" alt="Brake Pads "><br><br><br>
+                <p>ADATA XPG GAMMIX D30 DDR4 8 GB (Single Channel) RAM (Black, Red)</p>
+                <div class="price ">Rs1,596.00</div><br>
+                <button id="p1">View Product</button>
+                <script>
+                    document.getElementById('p1').addEventListener('click', function() {
+                        window.location.href = "file:///C:/VITS_PROJECT_X/view.html"
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop by Categories Section -->
+    <section class="shop-categories ">
+        <h2>SHOP BY CATEGORIES</h2>
+        <div class="categories-container ">
+            <!-- Category 1 -->
+            <div class="category-card ">
+                <img src="https://pcinternational.co.za/wp-content/uploads/2023/03/GF117-300x300.webp" alt="GRAPHICS">
+                <p>Best of Graphics</p>
+            </div>
+            <!-- Category 2 -->
+            <div class="category-card ">
+                <img src="https://elitehubs.com/cdn/shop/products/Intel-Core-i9-12900KF-12th-Gen-Alder-Lake-LGA-1700-Processor-BX8071512900KF-2.jpg?v=1683973742&width=533" alt="Beat ">
+                <p>Best in Processors</p>
+            </div>
+            <!-- Category 3 -->
+            <div class="category-card ">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYcgQ_xQO9_WTSlX2hKTnjAFGI2wcNKSPi4w&s" alt="Bolero ">
+                <p>Best in Power</p>
+            </div>
+            <!-- Category 4 -->
+            <div class="category-card ">
+                <img src="https://down-id.img.susercontent.com/file/95f393b3edb61567e44ea0093b3d4906" alt="Bolero ">
+                <p>Gaming Chipset</p>
+            </div>
+            <div class="category-card ">
+                <img src="https://dealclear.com/image/catalog/products/sandisk/b097pfrk5r/804894.jpg" alt="Bolero ">
+                <p>Best in Storage</p>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
+<footer>
+    <p>&copy; 2024 Spare Parts Store. All rights reserved.</p>
+</footer>
